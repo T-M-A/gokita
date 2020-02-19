@@ -1,10 +1,11 @@
 # gokita
-go-kita[pp] (https://gokit.io/) boiler plate
+go-kita[pp] - A [go-kit](https://gokit.io/) boiler plate
 
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [What's Included](#whats-included)
 - [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
 - [Epilogue](#epilogue)
 
 ### Introduction
@@ -59,13 +60,21 @@ that can run in production.
 - Prometheus
 - Zipkin
 
-#### Developer Workflow
+#### Misc
 
 - Docker Integration (Dockerfile + docker-compose.yml)
 
 ### Project Structure
 
 #### Enumeration of project structure
+
+### Getting Started
+
+To get gokita up and running you'll need to have a few things installed beforehand:
+
+1. [Go](https://golang.org/doc/install)
+2. [Go Dep](https://golang.github.io/dep/docs/installation.html)
+3. [Protobuf](https://github.com/google/protobuf)
 
 ### Epilogue
 
