@@ -66,7 +66,37 @@ that can run in production.
 
 ### Project Structure
 
-#### Enumeration of project structure
+```shell script
+.
+├── Gopkg.lock
+├── Gopkg.toml
+├── README.md
+├── build
+│   └── Dockerfile
+├── cmd
+│   ├── main.go
+│   └── service
+│       ├── service.go
+│       └── service_gen.go
+├── docker-compose.yml
+├── pkg
+│   ├── endpoint
+│   │   ├── endpoint.go
+│   │   ├── endpoint_gen.go
+│   │   └── middleware.go
+│   ├── service
+│   │   ├── middleware.go
+│   │   └── service.go
+│   └── transport
+│       ├── grpc
+│       │   ├── handler.go
+│       │   └── handler_gen.go
+│       └── http # TODO
+├── proto
+│   ├── compile.sh
+│   ├── gokita.pb.go
+│   └── gokita.proto
+```
 
 ### Getting Started
 
@@ -75,6 +105,17 @@ To get gokita up and running you'll need to have a few things installed beforeha
 1. [Go](https://golang.org/doc/install)
 2. [Go Dep](https://golang.github.io/dep/docs/installation.html)
 3. [Protobuf](https://github.com/google/protobuf)
+
+With the prerequisites out of the way;
+
+```shell script
+git clone https://github.com/SeamPay/gokita.git
+cd gokita
+docker-compose up --build
+```
+
+After you run docker-compose up your services will start up and any change you make to 
+your code will automatically rebuild and restart your service
 
 ### Epilogue
 
