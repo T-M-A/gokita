@@ -1,0 +1,12 @@
+version: "2"
+services:
+  gokita:
+    build:
+      context: .
+      dockerfile: build/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/github.com/SeamPay/gokita
+    container_name: gokita
+    ports:
+    - 8800:8082
