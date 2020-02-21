@@ -1,5 +1,5 @@
 # gokita
-go-kita[pp] - A [go-kit](https://gokit.io/) boiler plate
+go-kit-a[pp] - A [go-kit](https://gokit.io/) boiler plate
 
 - [Introduction](#introduction)
 - [Motivation](#motivation)
