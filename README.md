@@ -103,8 +103,7 @@ that can run in production.
 To get gokita up and running you'll need to have a few things installed beforehand:
 
 1. [Go](https://golang.org/doc/install)
-2. [Go Dep](https://golang.github.io/dep/docs/installation.html)
-3. [Protobuf](https://github.com/google/protobuf)
+2. [Protobuf](https://github.com/google/protobuf) and all it's generation requirements
 
 With the prerequisites out of the way;
 
