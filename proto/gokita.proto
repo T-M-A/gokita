@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package gokita;
+option go_package = "gokita";
+
+//The Gokita service definition.
+service Gokita {
+    rpc ListCustomer (ListCustomerRequest) returns (ListCustomerReply);
+}
+
+message ListCustomerRequest {
+    int64 limit = 1;
+    int64 page = 2;
+}
+
+message ListCustomerReply {
+    repeated Customer items = 1;
+    int64 total = 2;
+    int64 page = 3;
+    string err = 4;
+}
+
+message Customer {
+    string id = 1;
+    string first_name = 6;
+    string last_name = 7;
+}
