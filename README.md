@@ -115,7 +115,9 @@ docker-compose up --build
 ```
 
 After you run docker-compose up your services will start up and any change you make to 
-your code will automatically rebuild and restart your service
+your code will automatically rebuild and restart your service.
+
+You can use [BloomRPC](https://github.com/uw-labs/bloomrpc) to validate/test.
 
 ### Epilogue
 
