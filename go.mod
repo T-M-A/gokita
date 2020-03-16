@@ -10,6 +10,7 @@ require (
 	github.com/openzipkin-contrib/zipkin-go-opentracing v0.4.5
 	github.com/openzipkin/zipkin-go v0.2.2
 	github.com/prometheus/client_golang v1.4.1
+	github.com/urfave/cli/v2 v2.2.0
 	golang.org/x/net v0.0.0-20200219183655-46282727080f
 	google.golang.org/grpc v1.27.1
 )

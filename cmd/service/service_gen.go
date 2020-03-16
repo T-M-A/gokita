@@ -1,17 +1,17 @@
 package service
 
 import (
-	endpoint "github.com/SeamPay/gokita/pkg/endpoint"
-	service "github.com/SeamPay/gokita/pkg/service"
+	"github.com/SeamPay/gokita/pkg/endpoint"
+	"github.com/SeamPay/gokita/pkg/service"
 	endpoint1 "github.com/go-kit/kit/endpoint"
-	log "github.com/go-kit/kit/log"
+	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/metrics"
-	prometheus "github.com/go-kit/kit/metrics/prometheus"
-	opentracing "github.com/go-kit/kit/tracing/opentracing"
+	"github.com/go-kit/kit/metrics/prometheus"
+	"github.com/go-kit/kit/tracing/opentracing"
 	"github.com/go-kit/kit/tracing/zipkin"
 	"github.com/go-kit/kit/transport"
-	grpc "github.com/go-kit/kit/transport/grpc"
-	group "github.com/oklog/oklog/pkg/group"
+	"github.com/go-kit/kit/transport/grpc"
+	"github.com/oklog/oklog/pkg/group"
 	opentracinggo "github.com/opentracing/opentracing-go"
 	stdzipkin "github.com/openzipkin/zipkin-go"
 )
